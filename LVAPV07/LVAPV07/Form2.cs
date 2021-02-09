@@ -10,20 +10,19 @@ using System.Windows.Forms;
 
 namespace LVAPV07
 {
-    public partial class frmUno : Form
+    public partial class frmDos : Form
     {
-        public frmUno()
+        public frmDos()
         {
             InitializeComponent();
         }
 
-        private void btnLlevar_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
-            frmDos frmForma2 = new frmDos();
-            frmForma2.Show();
+            this.Close();
         }
 
-        private void lblForma1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
