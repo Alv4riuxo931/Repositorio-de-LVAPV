@@ -32,5 +32,16 @@ namespace LVAPV07
         {
             this.Close();
         }
+
+        private void btnLlevamefrm3_Click(object sender, EventArgs e)
+        {
+            frmTres frmForma3 = new frmTres();
+            frmForma3.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
