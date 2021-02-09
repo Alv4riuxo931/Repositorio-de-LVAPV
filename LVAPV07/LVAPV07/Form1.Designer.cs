@@ -30,11 +30,12 @@
         {
             this.btnLlevar = new System.Windows.Forms.Button();
             this.lblFormaUno = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLlevar
             // 
-            this.btnLlevar.Location = new System.Drawing.Point(616, 403);
+            this.btnLlevar.Location = new System.Drawing.Point(640, 403);
             this.btnLlevar.Name = "btnLlevar";
             this.btnLlevar.Size = new System.Drawing.Size(148, 23);
             this.btnLlevar.TabIndex = 0;
@@ -53,11 +54,22 @@
             this.lblFormaUno.Text = "Forma Uno";
             this.lblFormaUno.Click += new System.EventHandler(this.lblForma1_Click);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(12, 403);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmUno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblFormaUno);
             this.Controls.Add(this.btnLlevar);
             this.Name = "frmUno";
@@ -70,6 +82,7 @@
 
         private System.Windows.Forms.Button btnLlevar;
         private System.Windows.Forms.Label lblFormaUno;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }
 
