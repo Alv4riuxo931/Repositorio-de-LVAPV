@@ -16,7 +16,7 @@ namespace LVAPV07
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmUno());
+            Application.Run(new frmPrincipal());
         }
     }
 }
