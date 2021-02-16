@@ -56,12 +56,24 @@
             this.cmbSemestre = new System.Windows.Forms.ComboBox();
             this.txtPromedio = new System.Windows.Forms.TextBox();
             this.chcServicio = new System.Windows.Forms.CheckBox();
+            this.grpDocumentos = new System.Windows.Forms.GroupBox();
+            this.chcSolicitud = new System.Windows.Forms.CheckBox();
+            this.chcCartaCompromiso = new System.Windows.Forms.CheckBox();
+            this.chcCurriculum = new System.Windows.Forms.CheckBox();
+            this.chcEntrevista = new System.Windows.Forms.CheckBox();
+            this.chcEmpresas = new System.Windows.Forms.CheckBox();
+            this.chcCartaAceptacion = new System.Windows.Forms.CheckBox();
+            this.chcSeguroMedico = new System.Windows.Forms.CheckBox();
+            this.chcCartaPresentacion = new System.Windows.Forms.CheckBox();
+            this.chcCartaLiberacion = new System.Windows.Forms.CheckBox();
+            this.grpDatosEmpresa = new System.Windows.Forms.GroupBox();
             this.grpDatosPersonales.SuspendLayout();
             this.grpGenero.SuspendLayout();
             this.grpTipo.SuspendLayout();
             this.grpFotografia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpDatosCarrera.SuspendLayout();
+            this.grpDocumentos.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpDatosPersonales
@@ -340,11 +352,130 @@
             this.chcServicio.Text = "Servicio Social Incluido";
             this.chcServicio.UseVisualStyleBackColor = true;
             // 
+            // grpDocumentos
+            // 
+            this.grpDocumentos.Controls.Add(this.chcCartaLiberacion);
+            this.grpDocumentos.Controls.Add(this.chcCartaPresentacion);
+            this.grpDocumentos.Controls.Add(this.chcSeguroMedico);
+            this.grpDocumentos.Controls.Add(this.chcCartaAceptacion);
+            this.grpDocumentos.Controls.Add(this.chcEmpresas);
+            this.grpDocumentos.Controls.Add(this.chcEntrevista);
+            this.grpDocumentos.Controls.Add(this.chcCurriculum);
+            this.grpDocumentos.Controls.Add(this.chcCartaCompromiso);
+            this.grpDocumentos.Controls.Add(this.chcSolicitud);
+            this.grpDocumentos.Location = new System.Drawing.Point(12, 346);
+            this.grpDocumentos.Name = "grpDocumentos";
+            this.grpDocumentos.Size = new System.Drawing.Size(725, 91);
+            this.grpDocumentos.TabIndex = 6;
+            this.grpDocumentos.TabStop = false;
+            this.grpDocumentos.Text = "Documentos Entregados";
+            // 
+            // chcSolicitud
+            // 
+            this.chcSolicitud.AutoSize = true;
+            this.chcSolicitud.Location = new System.Drawing.Point(15, 19);
+            this.chcSolicitud.Name = "chcSolicitud";
+            this.chcSolicitud.Size = new System.Drawing.Size(173, 17);
+            this.chcSolicitud.TabIndex = 0;
+            this.chcSolicitud.Text = "Solicitud Práticas Profesionales";
+            this.chcSolicitud.UseVisualStyleBackColor = true;
+            // 
+            // chcCartaCompromiso
+            // 
+            this.chcCartaCompromiso.AutoSize = true;
+            this.chcCartaCompromiso.Location = new System.Drawing.Point(15, 42);
+            this.chcCartaCompromiso.Name = "chcCartaCompromiso";
+            this.chcCartaCompromiso.Size = new System.Drawing.Size(111, 17);
+            this.chcCartaCompromiso.TabIndex = 1;
+            this.chcCartaCompromiso.Text = "Carta Compromiso";
+            this.chcCartaCompromiso.UseVisualStyleBackColor = true;
+            // 
+            // chcCurriculum
+            // 
+            this.chcCurriculum.AutoSize = true;
+            this.chcCurriculum.Location = new System.Drawing.Point(15, 65);
+            this.chcCurriculum.Name = "chcCurriculum";
+            this.chcCurriculum.Size = new System.Drawing.Size(104, 17);
+            this.chcCurriculum.TabIndex = 2;
+            this.chcCurriculum.Text = "Currículum Vitae";
+            this.chcCurriculum.UseVisualStyleBackColor = true;
+            // 
+            // chcEntrevista
+            // 
+            this.chcEntrevista.AutoSize = true;
+            this.chcEntrevista.Location = new System.Drawing.Point(282, 19);
+            this.chcEntrevista.Name = "chcEntrevista";
+            this.chcEntrevista.Size = new System.Drawing.Size(161, 17);
+            this.chcEntrevista.TabIndex = 3;
+            this.chcEntrevista.Text = "Entrevista por Competencias";
+            this.chcEntrevista.UseVisualStyleBackColor = true;
+            // 
+            // chcEmpresas
+            // 
+            this.chcEmpresas.AutoSize = true;
+            this.chcEmpresas.Location = new System.Drawing.Point(282, 42);
+            this.chcEmpresas.Name = "chcEmpresas";
+            this.chcEmpresas.Size = new System.Drawing.Size(137, 17);
+            this.chcEmpresas.TabIndex = 4;
+            this.chcEmpresas.Text = "Selección de Empresas";
+            this.chcEmpresas.UseVisualStyleBackColor = true;
+            // 
+            // chcCartaAceptacion
+            // 
+            this.chcCartaAceptacion.AutoSize = true;
+            this.chcCartaAceptacion.Location = new System.Drawing.Point(282, 65);
+            this.chcCartaAceptacion.Name = "chcCartaAceptacion";
+            this.chcCartaAceptacion.Size = new System.Drawing.Size(123, 17);
+            this.chcCartaAceptacion.TabIndex = 5;
+            this.chcCartaAceptacion.Text = "Carta de Aceptación";
+            this.chcCartaAceptacion.UseVisualStyleBackColor = true;
+            // 
+            // chcSeguroMedico
+            // 
+            this.chcSeguroMedico.AutoSize = true;
+            this.chcSeguroMedico.Location = new System.Drawing.Point(519, 19);
+            this.chcSeguroMedico.Name = "chcSeguroMedico";
+            this.chcSeguroMedico.Size = new System.Drawing.Size(154, 17);
+            this.chcSeguroMedico.TabIndex = 6;
+            this.chcSeguroMedico.Text = "Seguro de Gastos Médicos";
+            this.chcSeguroMedico.UseVisualStyleBackColor = true;
+            // 
+            // chcCartaPresentacion
+            // 
+            this.chcCartaPresentacion.AutoSize = true;
+            this.chcCartaPresentacion.Location = new System.Drawing.Point(519, 42);
+            this.chcCartaPresentacion.Name = "chcCartaPresentacion";
+            this.chcCartaPresentacion.Size = new System.Drawing.Size(131, 17);
+            this.chcCartaPresentacion.TabIndex = 7;
+            this.chcCartaPresentacion.Text = "Carta de Presentación";
+            this.chcCartaPresentacion.UseVisualStyleBackColor = true;
+            // 
+            // chcCartaLiberacion
+            // 
+            this.chcCartaLiberacion.AutoSize = true;
+            this.chcCartaLiberacion.Location = new System.Drawing.Point(519, 65);
+            this.chcCartaLiberacion.Name = "chcCartaLiberacion";
+            this.chcCartaLiberacion.Size = new System.Drawing.Size(118, 17);
+            this.chcCartaLiberacion.TabIndex = 8;
+            this.chcCartaLiberacion.Text = "Carta de Liberación";
+            this.chcCartaLiberacion.UseVisualStyleBackColor = true;
+            // 
+            // grpDatosEmpresa
+            // 
+            this.grpDatosEmpresa.Location = new System.Drawing.Point(12, 443);
+            this.grpDatosEmpresa.Name = "grpDatosEmpresa";
+            this.grpDatosEmpresa.Size = new System.Drawing.Size(725, 200);
+            this.grpDatosEmpresa.TabIndex = 7;
+            this.grpDatosEmpresa.TabStop = false;
+            this.grpDatosEmpresa.Text = "Datos Empresa";
+            // 
             // frmUno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 578);
+            this.ClientSize = new System.Drawing.Size(749, 655);
+            this.Controls.Add(this.grpDatosEmpresa);
+            this.Controls.Add(this.grpDocumentos);
             this.Controls.Add(this.grpDatosCarrera);
             this.Controls.Add(this.grpFotografia);
             this.Controls.Add(this.grpTipo);
@@ -362,6 +493,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grpDatosCarrera.ResumeLayout(false);
             this.grpDatosCarrera.PerformLayout();
+            this.grpDocumentos.ResumeLayout(false);
+            this.grpDocumentos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -395,6 +528,17 @@
         private System.Windows.Forms.Label lblPromedio;
         private System.Windows.Forms.Label lblSemestre;
         private System.Windows.Forms.Label lblCarrera;
+        private System.Windows.Forms.GroupBox grpDocumentos;
+        private System.Windows.Forms.CheckBox chcCartaLiberacion;
+        private System.Windows.Forms.CheckBox chcCartaPresentacion;
+        private System.Windows.Forms.CheckBox chcSeguroMedico;
+        private System.Windows.Forms.CheckBox chcCartaAceptacion;
+        private System.Windows.Forms.CheckBox chcEmpresas;
+        private System.Windows.Forms.CheckBox chcEntrevista;
+        private System.Windows.Forms.CheckBox chcCurriculum;
+        private System.Windows.Forms.CheckBox chcCartaCompromiso;
+        private System.Windows.Forms.CheckBox chcSolicitud;
+        private System.Windows.Forms.GroupBox grpDatosEmpresa;
     }
 }
 
