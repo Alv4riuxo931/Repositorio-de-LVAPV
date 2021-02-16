@@ -67,6 +67,19 @@
             this.chcCartaPresentacion = new System.Windows.Forms.CheckBox();
             this.chcCartaLiberacion = new System.Windows.Forms.CheckBox();
             this.grpDatosEmpresa = new System.Windows.Forms.GroupBox();
+            this.lstEmpresas = new System.Windows.Forms.ListBox();
+            this.lblContacto = new System.Windows.Forms.Label();
+            this.lblAsesor = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblMobilAsesor = new System.Windows.Forms.Label();
+            this.txtContacto = new System.Windows.Forms.TextBox();
+            this.txtAsesor = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.lblInicio = new System.Windows.Forms.Label();
+            this.lblTermino = new System.Windows.Forms.Label();
             this.grpDatosPersonales.SuspendLayout();
             this.grpGenero.SuspendLayout();
             this.grpTipo.SuspendLayout();
@@ -74,6 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpDatosCarrera.SuspendLayout();
             this.grpDocumentos.SuspendLayout();
+            this.grpDatosEmpresa.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpDatosPersonales
@@ -462,12 +476,147 @@
             // 
             // grpDatosEmpresa
             // 
+            this.grpDatosEmpresa.Controls.Add(this.lblTermino);
+            this.grpDatosEmpresa.Controls.Add(this.lblInicio);
+            this.grpDatosEmpresa.Controls.Add(this.dateTimePicker2);
+            this.grpDatosEmpresa.Controls.Add(this.dateTimePicker1);
+            this.grpDatosEmpresa.Controls.Add(this.textBox4);
+            this.grpDatosEmpresa.Controls.Add(this.txtEmail);
+            this.grpDatosEmpresa.Controls.Add(this.txtAsesor);
+            this.grpDatosEmpresa.Controls.Add(this.txtContacto);
+            this.grpDatosEmpresa.Controls.Add(this.lblMobilAsesor);
+            this.grpDatosEmpresa.Controls.Add(this.lblEmail);
+            this.grpDatosEmpresa.Controls.Add(this.lblAsesor);
+            this.grpDatosEmpresa.Controls.Add(this.lblContacto);
+            this.grpDatosEmpresa.Controls.Add(this.lstEmpresas);
             this.grpDatosEmpresa.Location = new System.Drawing.Point(12, 443);
             this.grpDatosEmpresa.Name = "grpDatosEmpresa";
             this.grpDatosEmpresa.Size = new System.Drawing.Size(725, 200);
             this.grpDatosEmpresa.TabIndex = 7;
             this.grpDatosEmpresa.TabStop = false;
             this.grpDatosEmpresa.Text = "Datos Empresa";
+            // 
+            // lstEmpresas
+            // 
+            this.lstEmpresas.FormattingEnabled = true;
+            this.lstEmpresas.Items.AddRange(new object[] {
+            "T-System",
+            "VW",
+            "BMW",
+            "Sysne",
+            "GM",
+            "Google",
+            "SDR",
+            "Facebook",
+            "Space-X",
+            "MEXAbat",
+            "AWS",
+            "Benteler",
+            "MOAL",
+            "Safrán",
+            "KFC",
+            "Endstation"});
+            this.lstEmpresas.Location = new System.Drawing.Point(3, 16);
+            this.lstEmpresas.Name = "lstEmpresas";
+            this.lstEmpresas.Size = new System.Drawing.Size(120, 173);
+            this.lstEmpresas.TabIndex = 0;
+            // 
+            // lblContacto
+            // 
+            this.lblContacto.AutoSize = true;
+            this.lblContacto.Location = new System.Drawing.Point(260, 16);
+            this.lblContacto.Name = "lblContacto";
+            this.lblContacto.Size = new System.Drawing.Size(53, 13);
+            this.lblContacto.TabIndex = 1;
+            this.lblContacto.Text = "Contacto:";
+            // 
+            // lblAsesor
+            // 
+            this.lblAsesor.AutoSize = true;
+            this.lblAsesor.Location = new System.Drawing.Point(260, 42);
+            this.lblAsesor.Name = "lblAsesor";
+            this.lblAsesor.Size = new System.Drawing.Size(42, 13);
+            this.lblAsesor.TabIndex = 2;
+            this.lblAsesor.Text = "Asesor:";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(260, 73);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(39, 13);
+            this.lblEmail.TabIndex = 3;
+            this.lblEmail.Text = "E-Mail:";
+            // 
+            // lblMobilAsesor
+            // 
+            this.lblMobilAsesor.AutoSize = true;
+            this.lblMobilAsesor.Location = new System.Drawing.Point(260, 99);
+            this.lblMobilAsesor.Name = "lblMobilAsesor";
+            this.lblMobilAsesor.Size = new System.Drawing.Size(115, 13);
+            this.lblMobilAsesor.TabIndex = 4;
+            this.lblMobilAsesor.Text = "Teléfono Móbil Asesor:";
+            this.lblMobilAsesor.Click += new System.EventHandler(this.lblMobilAsesor_Click);
+            // 
+            // txtContacto
+            // 
+            this.txtContacto.Location = new System.Drawing.Point(378, 13);
+            this.txtContacto.Name = "txtContacto";
+            this.txtContacto.Size = new System.Drawing.Size(341, 20);
+            this.txtContacto.TabIndex = 5;
+            // 
+            // txtAsesor
+            // 
+            this.txtAsesor.Location = new System.Drawing.Point(378, 39);
+            this.txtAsesor.Name = "txtAsesor";
+            this.txtAsesor.Size = new System.Drawing.Size(341, 20);
+            this.txtAsesor.TabIndex = 6;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(378, 70);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(341, 20);
+            this.txtEmail.TabIndex = 7;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(378, 96);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(341, 20);
+            this.textBox4.TabIndex = 8;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(519, 135);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(519, 169);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 10;
+            // 
+            // lblInicio
+            // 
+            this.lblInicio.AutoSize = true;
+            this.lblInicio.Location = new System.Drawing.Point(402, 142);
+            this.lblInicio.Name = "lblInicio";
+            this.lblInicio.Size = new System.Drawing.Size(83, 13);
+            this.lblInicio.TabIndex = 11;
+            this.lblInicio.Text = "Fecha de Inicio:";
+            // 
+            // lblTermino
+            // 
+            this.lblTermino.AutoSize = true;
+            this.lblTermino.Location = new System.Drawing.Point(402, 169);
+            this.lblTermino.Name = "lblTermino";
+            this.lblTermino.Size = new System.Drawing.Size(96, 13);
+            this.lblTermino.TabIndex = 12;
+            this.lblTermino.Text = "Fecha de Termino:";
             // 
             // frmUno
             // 
@@ -495,6 +644,8 @@
             this.grpDatosCarrera.PerformLayout();
             this.grpDocumentos.ResumeLayout(false);
             this.grpDocumentos.PerformLayout();
+            this.grpDatosEmpresa.ResumeLayout(false);
+            this.grpDatosEmpresa.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -539,6 +690,19 @@
         private System.Windows.Forms.CheckBox chcCartaCompromiso;
         private System.Windows.Forms.CheckBox chcSolicitud;
         private System.Windows.Forms.GroupBox grpDatosEmpresa;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtAsesor;
+        private System.Windows.Forms.TextBox txtContacto;
+        private System.Windows.Forms.Label lblMobilAsesor;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblAsesor;
+        private System.Windows.Forms.Label lblContacto;
+        private System.Windows.Forms.ListBox lstEmpresas;
+        private System.Windows.Forms.Label lblTermino;
+        private System.Windows.Forms.Label lblInicio;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 

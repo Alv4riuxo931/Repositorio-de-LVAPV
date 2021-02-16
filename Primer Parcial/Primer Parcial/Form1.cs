@@ -21,5 +21,10 @@ namespace Primer_Parcial
         {
 
         }
+
+        private void lblMobilAsesor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
